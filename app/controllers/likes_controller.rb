@@ -1,10 +1,10 @@
 class LikesController < ApplicationController
-  before_action :set_tweet
+    before_action :set_tweet
 
-  def create
-    @tweet.increment! :likes_count
-    redirect_to @tweet
-  end
+    def create
+      @tweet.increment! :likes_count
+      redirect_to @tweet
+    end
 
   private
 
